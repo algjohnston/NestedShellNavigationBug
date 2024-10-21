@@ -7,21 +7,9 @@
     Shell.FlyoutBehavior="Disabled"
     Title="NestedShellNavigationBug">
 
-    <TabBar >
-
-        <Tab>
-
-            <ShellContent
-                Title="Page1"
-                ContentTemplate="{DataTemplate local:Page1}" 
-            />
-
-            <ShellContent
-                Title="Page2"
-                ContentTemplate="{DataTemplate local:Page2}" />
-
-        </Tab>
-
-    </TabBar>
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
 
 </Shell>
